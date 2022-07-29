@@ -1,0 +1,17 @@
+br\com\thedomeit\controllers\MainController.class
+br\com\thedomeit\exception\ApiError.class
+br\com\thedomeit\config\SwaggerConfig.class
+br\com\thedomeit\model\entities\Expense.class
+br\com\thedomeit\util\Format.class
+br\com\thedomeit\services\IExpenseService.class
+br\com\thedomeit\ExpensesApplication.class
+br\com\thedomeit\config\SwaggerConfig$CustomPathProvider.class
+br\com\thedomeit\exception\ApiErrorList.class
+br\com\thedomeit\repositories\ExpenseRepository.class
+br\com\thedomeit\services\ExpenseService.class
+br\com\thedomeit\model\dto\ExpenseDto$ExpenseDtoBuilder.class
+br\com\thedomeit\exception\ControllerExceptionHandler.class
+br\com\thedomeit\model\entities\Expense$ExpenseBuilder.class
+br\com\thedomeit\util\BuilderData.class
+br\com\thedomeit\model\dto\ExpenseDto.class
+br\com\thedomeit\exception\NotFoundException.class
