@@ -52,7 +52,7 @@ public class BuilderData{
 	public ExpenseDto builderInsertOk() {
 		expenseDto = new ExpenseDto();
 
-		expenseDto.setDateExpense(LocalDateTime.now());
+		expenseDto.setDateExpense(LocalDateTime.now().toString());
 		expenseDto.setDescriptionExpense("Descriçao Insert OK");
 		expenseDto.setValueExpense(BigDecimal.valueOf(788.55));
 		expenseDto.setTag("#TagTeste");

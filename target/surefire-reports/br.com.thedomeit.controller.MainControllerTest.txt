@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: br.com.thedomeit.controller.MainControllerTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.542 s - in br.com.thedomeit.controller.MainControllerTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.094 s - in br.com.thedomeit.controller.MainControllerTest

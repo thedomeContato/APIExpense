@@ -22,7 +22,7 @@ import io.swagger.annotations.ApiResponses;
 import java.util.List;
 
 @RestController
-@RequestMapping("/expense/")
+@RequestMapping("/expense")
 @Api(tags = "Expense")
 public class MainController {
 

@@ -6,7 +6,6 @@ import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.Digits;
 import javax.validation.constraints.NotBlank;
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
 
 @Builder
 @AllArgsConstructor
@@ -23,7 +22,8 @@ public class ExpenseDto {
 	@NotBlank(message = "Description Expense is necessary")
 	private String descriptionExpense;
 
-	private LocalDateTime dateExpense;
+	@NotBlank(message = "Description Expense is necessary")
+	private String dateExpense;
 
 	@DecimalMin(value = "0.0", inclusive = false)
 	@Digits(integer=5, fraction=2)

@@ -3,6 +3,7 @@ package br.com.thedomeit.util;
 import br.com.thedomeit.model.dto.ExpenseDto;
 import br.com.thedomeit.model.entities.Expense;
 import org.springframework.stereotype.Component;
+import java.time.LocalDateTime;
 
 
 @Component
@@ -12,10 +13,9 @@ public class Format {
 	private ExpenseDto expenseDto = new ExpenseDto();
 
 	public Expense formatExpenseDtoToExpense(ExpenseDto expenseDto){
-
 		expense = new Expense();
 
-		expense.setDateExpense(expenseDto.getDateExpense());
+		expense.setDateExpense(LocalDateTime.parse(expenseDto.getDateExpense()));
 		expense.setDescriptionExpense(expenseDto.getDescriptionExpense());
 		expense.setValueExpense(expenseDto.getValueExpense());
 		expense.setId(expenseDto.getId());
@@ -26,10 +26,9 @@ public class Format {
 	}
 
 	public ExpenseDto formatExpenseToExpenseDto(Expense expense){
-
 		expenseDto = new ExpenseDto();
 
-		expenseDto.setDateExpense(expense.getDateExpense());
+		expenseDto.setDateExpense(expense.getDateExpense().toString());
 		expenseDto.setDescriptionExpense(expense.getDescriptionExpense());
 		expenseDto.setValueExpense(expense.getValueExpense());
 		expenseDto.setId(expense.getId());
